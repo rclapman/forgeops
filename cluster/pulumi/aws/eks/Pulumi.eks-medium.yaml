@@ -20,7 +20,7 @@ config:
   frontendnodes:maxNodes: "3"
   frontendnodes:minNodes: "3"
   frontendnodes:nodeCount: "3"
-  primarynodes:ami: ami-0392bafc801b7520f
+  primarynodes:ami: ami-0bf37ed07346b3d23
   primarynodes:diskSizeGb: "80"
   primarynodes:instanceType: c5.4xlarge
   primarynodes:maxNodes: "6"
