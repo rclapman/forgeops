@@ -1,0 +1,8 @@
+Interact with the Skaffold configuration
+
+Available Commands:
+  list        List all values set in the global Skaffold config
+  set         Set a value in the global Skaffold config
+  unset       Unset a value in the global Skaffold config
+
+Use "skaffold <command> --help" for more information about a given command.

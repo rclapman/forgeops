@@ -1,6 +1,5 @@
 controller:
     kind: DaemonSet
-    nginxDebug: true
     daemonset: 
         useHostPort: true
         hostPorts:
