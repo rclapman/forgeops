@@ -1,6 +1,5 @@
 controller:
     kind: DaemonSet
-    nginxDebug: true
     daemonset: 
         useHostPort: true
         hostPorts:
@@ -9,7 +8,7 @@ controller:
     service:
         enabled: false
     publishService: 
-        enabled: true
+        enabled: false
     stats:
         enabled: true
         service:
@@ -23,5 +22,4 @@ controller:
 defaultBackend:
     service:
         omitClusterIP: true
-        
     

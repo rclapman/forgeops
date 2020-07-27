@@ -78,8 +78,10 @@ ADDONS_DIR="${ADDONS_BASE}/nginx-ingress-controller"
 
 
 # Add Helm repo
-helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx/ > /dev/null
-
+# helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx/ > /dev/null
+helm repo add stable https://kubernetes-charts.storage.googleapis.com/ > /dev/null
 # Deploy ingress controller Helm chart
-helm upgrade -i nginx-ingress --namespace nginx ingress-nginx/ingress-nginx \
+# helm upgrade -i nginx-ingress --namespace nginx ingress-nginx/ingress-nginx \
+#  $IP_OPTS $AKS_OPTS -f ${ADDONS_DIR}/${PROVIDER}.yaml
+helm upgrade -i nginx-ingress --namespace nginx stable/nginx-ingress \
   $IP_OPTS $AKS_OPTS -f ${ADDONS_DIR}/${PROVIDER}.yaml
