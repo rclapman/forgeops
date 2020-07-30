@@ -6,9 +6,9 @@ config:
   dsnodes:diskSizeGb: "80"
   dsnodes:enable: "true"
   dsnodes:instanceType: c5.4xlarge
-  dsnodes:maxNodes: "6"
-  dsnodes:minNodes: "6"
-  dsnodes:nodeCount: "6"
+  dsnodes:maxNodes: "0"
+  dsnodes:minNodes: "0"
+  dsnodes:nodeCount: "0"
   eks:k8sDashboard: "false"
   eks:k8sVersion: "1.15"
   eks:pubKey:
@@ -17,13 +17,13 @@ config:
   frontendnodes:diskSizeGb: "10"
   frontendnodes:enable: "false"
   frontendnodes:instanceType: c5.large
-  frontendnodes:maxNodes: "3"
-  frontendnodes:minNodes: "3"
-  frontendnodes:nodeCount: "3"
+  frontendnodes:maxNodes: "0"
+  frontendnodes:minNodes: "0"
+  frontendnodes:nodeCount: "0"
   primarynodes:ami: ami-0bf37ed07346b3d23
   primarynodes:diskSizeGb: "80"
   primarynodes:instanceType: c5.4xlarge
-  primarynodes:maxNodes: "6"
-  primarynodes:minNodes: "1"
-  primarynodes:nodeCount: "6"
+  primarynodes:maxNodes: "0"
+  primarynodes:minNodes: "0"
+  primarynodes:nodeCount: "0"
   workernodes:ami: ami-0bf37ed07346b3d23
